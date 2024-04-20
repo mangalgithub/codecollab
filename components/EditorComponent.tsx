@@ -1,3 +1,4 @@
+//Editor made with Monaco Editor
 import Editor, { Monaco, OnChange, } from "@monaco-editor/react";
 import React, { useRef } from "react";
 import PrimaryButton from "./Button";
@@ -23,7 +24,6 @@ const EditorComponent: React.FC<EditorComponentProps> = ({
         <PrimaryButton text="Run" onClickFunc={onClickFunc} />
       </div>
       <Editor
-        
         className="text-xl"
         height="91vh"
         onChange={onChange}

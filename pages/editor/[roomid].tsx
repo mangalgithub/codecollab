@@ -281,5 +281,4 @@ const EditorContainer: React.FC<EditorProps> = ({}) => {
     </div>
   );
 };
-
 export default EditorContainer;

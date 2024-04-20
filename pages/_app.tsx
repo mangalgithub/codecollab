@@ -14,7 +14,6 @@ function MyApp({ Component, pageProps }: AppProps) {
             duration: 3000,
             theme: {
               primary: "#4aee88",
-              // secondary: "black",
             },
           },
         }}

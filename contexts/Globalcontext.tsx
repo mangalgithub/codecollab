@@ -1,4 +1,4 @@
-
+//Global context to store the name of the user
 import {createContext, useContext} from "react"
 
 type IGlobalContext = {

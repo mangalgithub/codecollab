@@ -1,3 +1,4 @@
+//This is dummy data for the files in the editor
 export const dummyFilesData = {
     "index.html" : {
         name:"index.html",
