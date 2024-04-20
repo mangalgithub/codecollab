@@ -10,7 +10,6 @@ interface JoinRoomDialogueProps {}
 const JoinRoomDialogue: React.FC<JoinRoomDialogueProps> = () => {
   const [showModal, setShowModal] = React.useState(false);
   const [roomId, setRoomId] = useState("");
-  // const [name, setName] = useState("");
   const router = useRouter()
   const { name, setName } = useGlobalContext()
 
@@ -37,21 +36,11 @@ const JoinRoomDialogue: React.FC<JoinRoomDialogueProps> = () => {
         text="Go to Editor"
         onClickFunc={() => setShowModal(true)}
       />
-      {/* <button
-          className="bg-pink-500 h text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150"
-          type="button"
-          onClick={() => setShowModal(true)}
-        >
-           
-          Open regular modal 
-        </button>  */}
       {showModal ? (
         <>
           <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
             <div className="relative w-auto my-6 mx-auto max-w-2xl">
-              {/*content*/}
-              <div className=" text-white border-0 rounded-lg shadow-lg relative flex flex-col w-full pb-4 bg-bgdark outline-none focus:outline-none">
-                {/*header*/}
+              <div className=" text-white border-0 rounded-lg shadow-lg relative flex flex-col w-full pb-4 bg-purple-500 outline-none focus:outline-none">
                 <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
                   <h3 className="text-2xl font-semibold">Join Room</h3>
                   <button
@@ -89,22 +78,22 @@ const JoinRoomDialogue: React.FC<JoinRoomDialogueProps> = () => {
                 {/*footer*/}
                 <div className="flex items-center justify-end pr-6 rounded-b">
                   <button
-                    className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    className="bg-yellow-400 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"
                     onClick={joinRoom}
                   >
                     Join
                   </button>
                 </div>
-                <p className="my-2 text-slate-500 text-lg leading-relaxed mx-8">
+                <p className="my-2 text-black text-lg leading-relaxed mx-8">
                   {" "}
                   If you don't have invite code then create &nbsp;
                   <a
                     onClick={createNewRoom}
                     href=""
-                    className="text-primary font-bold border-b-2 border-primary hover:animate-pulse"
+                    className="text-bgdark font-bold border-b-2 border-primary hover:animate-pulse"
                   >
-                    new room
+                    Create New Room
                   </a>
                 </p>{" "}
               </div>

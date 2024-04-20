@@ -15,10 +15,7 @@ interface consolefeed {
 const ConsoleSection: React.FC<ConsoleSectionProps> = ({}) => {
   const [consoleFeed, setConsoleFeed] = useState<consolefeed[]>([]);
 
-  
-
   useEffect(() => {
-    // setConsoleFeed(() => [])
     window.addEventListener("message", (e) => {
       const data = e.data;
       if (data.type === "log") {
@@ -44,7 +41,6 @@ const ConsoleSection: React.FC<ConsoleSectionProps> = ({}) => {
     className="cursor-pointer ml-5"
                     
   /> 
-  {/* <Image src="/trash.svg" width="20px" height="20px" /> */}
   </div>
     <div className="h-full text-black px-3 pt-3">
       {

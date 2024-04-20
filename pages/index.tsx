@@ -2,7 +2,6 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
-import PrimaryButton from "../components/Button";
 import JoinRoomDialogue from "../components/joinRoomDialogue";
 const Home: NextPage = () => {
   return (
@@ -31,19 +30,13 @@ const Home: NextPage = () => {
         </div>
 
         <div className=" rounded-lg border-2 overflow-hidden">
-          <Image
-            src="/ww1.png"
-            width={800}
-            className="aspect-square"
-            height={500}
-          />
         </div>
       </div>
        <footer className="fixed bottom-2">
         Made with 💛 by{" "}
         <a
           className="text-primary ml-2 font-bold"
-          href="https://github.com/NayanPatil1998"
+          href="https://github.com/mangalgithub"
         >
           {" "}
           Mangal Gupta

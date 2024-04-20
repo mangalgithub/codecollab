@@ -16,7 +16,7 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({
       {link ? (
         <Link href={link!}>
           <button
-            className="h-10 px-6 font-semibold rounded-md bg-primary text-black"
+            className="h-10 px-6 font-semibold rounded-md bg-yellow-400 text-black"
             type="submit"
           >
             {text}
@@ -25,7 +25,7 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({
       ) : (
         <button
         onClick={onClickFunc}
-          className="h-10 px-6 font-semibold rounded-md bg-primary text-black"
+          className="h-10 px-6 font-semibold rounded-md bg-yellow-400 text-black"
           type="submit"
         >
           {text}

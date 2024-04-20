@@ -1,9 +1,26 @@
 import "../styles/global.css";
 import type { AppProps } from "next/app";
-
+import { GlobalContext } from "../contexts/Globalcontext";
+import { useState } from "react";
+import { Toaster } from "react-hot-toast";
 function MyApp({ Component, pageProps }: AppProps) {
+   const [name, setName] = useState("")
   return (
-      <Component {...pageProps} />
+      <GlobalContext.Provider value={{name, setName}}>
+          <Toaster
+        position="top-right"
+        toastOptions={{
+          success: {
+            duration: 3000,
+            theme: {
+              primary: "#4aee88",
+              // secondary: "black",
+            },
+          },
+        }}
+      />
+        <Component {...pageProps} />
+      </GlobalContext.Provider>
   );
 }
 

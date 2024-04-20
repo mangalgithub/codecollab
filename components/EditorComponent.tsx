@@ -19,7 +19,7 @@ const EditorComponent: React.FC<EditorComponentProps> = ({
 
   return (
     <div>
-      <div className="h-10 bg-bgdark p-8 flex items-center justify-center">
+      <div className="h-10 bg-purple-500 p-8 flex items-center justify-center">
         <PrimaryButton text="Run" onClickFunc={onClickFunc} />
       </div>
       <Editor
@@ -27,7 +27,6 @@ const EditorComponent: React.FC<EditorComponentProps> = ({
         className="text-xl"
         height="91vh"
         onChange={onChange}
-        // defaultLanguage={language}
         language={language}
         value={code}
         theme="vs-dark"
