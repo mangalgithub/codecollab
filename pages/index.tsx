@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 import JoinRoomDialogue from "../components/joinRoomDialogue";
+import GenerateSoundView from "../app/views/GenerateSoundView";
 const Home: NextPage = () => {
   return (
     <div className="flex flex-col space-y-10 bg-gradient-to-b from-slate-800 via-bgpink to-bgdark min-h-screen text-white justify-center items-center">
@@ -26,6 +27,9 @@ const Home: NextPage = () => {
 
           <div>
             <JoinRoomDialogue />
+          </div>
+          <div>
+            <GenerateSoundView />
           </div>
         </div>
 

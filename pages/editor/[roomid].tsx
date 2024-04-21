@@ -201,7 +201,6 @@ const EditorContainer: React.FC<EditorProps> = ({}) => {
         <div className="flex flex-col h-screen justify-between">
           <div className="  flex-col ">
             <div className="flex items-center px-4 w-full h-32 ">
-              <Image width={50} height={50} src="/logo-white.png" />
               <h1 className="font-extrabold text-2xl">Code Collab</h1>
             </div>
             <hr />
